@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "History Access Extension",
+  "version": "1.0",
+  "description": "Retrieve user browsing history",
+  "permissions": [
+    "history"
+  ],
+  "action": {
+    "default_popup": "app.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
