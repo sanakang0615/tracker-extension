@@ -1,15 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "History Access Extension",
+  "name": "최근 방문 기록 새 탭",
   "version": "1.0",
-  "description": "Retrieve user browsing history",
+  "description": "새 탭을 열 때마다 최근 방문 기록을 표시합니다.",
   "permissions": [
-    "history"
+    "history",
+    "tabs"
   ],
-  "action": {
-    "default_popup": "app.html"
-  },
-  "background": {
-    "service_worker": "background.js"
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
   }
 }
