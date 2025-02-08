@@ -1,4 +1,4 @@
-/* 기본 폰트 및 배경 설정 */
+/* 전체 페이지 스타일 */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -6,49 +6,79 @@ body {
   color: #333;
 }
 
-/* 헤더 스타일 */
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* 리스트 스타일 */
-ul#history-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* 아이콘과 텍스트 간격 */
-}
-
-
-/* 히스토리 리스트 스타일 */
-ul#history-list {
-  list-style-type: none; /* 기본 불릿 제거 */
+/* 방문 기록 리스트 기본 스타일 */
+#history-list {
+  list-style-type: none;
   padding: 0;
 }
 
-/* 각 리스트 아이템 스타일 */
-ul#history-list li {
+/* 각 방문 기록 항목 스타일 */
+.history-item {
   background-color: #fff;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-/* 링크 스타일 */
-ul#history-list li a {
+/* 기본 정보 영역 (파비콘 + 링크) */
+.main-info {
+  display: flex;
+  align-items: center;
+}
+
+.main-info a {
   text-decoration: none;
   color: #007acc;
 }
 
-/* 링크 호버 시 스타일 */
-ul#history-list li a:hover {
+.main-info a:hover {
   text-decoration: underline;
 }
 
-/* 추가 정보 스타일 */
+/* 추가 정보 영역 스타일 */
 .info {
   font-size: 0.9em;
   color: #555;
   margin-top: 5px;
+}
+
+/* 방문 상세 정보 보기 버튼 */
+.visits-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.visits-button:hover {
+  background-color: #005f99;
+}
+
+/* 방문 상세 정보를 감싸는 영역 */
+.visits-container {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* 방문 상세 정보 리스트 스타일 */
+.visits-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.visits-list li {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
 }
