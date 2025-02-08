@@ -37,3 +37,10 @@ ul#history-list li a {
 ul#history-list li a:hover {
   text-decoration: underline;
 }
+
+/* 추가 정보 스타일 */
+.info {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
